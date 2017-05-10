@@ -4,7 +4,7 @@
 Pour réaliser une cartographie des votes aux présidentielles de 2002 et 2017 et de la société française (===> mettre en lien), nous avons déployé un outil qu'affectionnent particulièrement les data scientist, le langage R.
 Nous allons décrire les étapes par lesquelles nous sommes passés afin que vous puissiez reproduire nos cartographies.
 
-##Librairies et packages
+## Librairies et packages
 
 
 >>-sp
@@ -32,7 +32,7 @@ Méthodes couramment utilisées afin de choisir et mettre en place des intervall
 Importe de nombreux formats de données raster, spatiales et aussi vectorielles.
 
 
-##Données géographiques 
+## Données géographiques 
 
 Les données géographiques utilisées dans ce cas d'usage sont des données libres répertoriées sur internet.
 Ainsi, nous avons importé les données départementales et des anciennes régions françaises que vous pouvez retrouver en suivant les liens : 
@@ -41,7 +41,7 @@ régions : https://www.arcgis.com/home/item.html?id=9ce5971171e449c19a70caa0127d
 Les données des anciennes régions présentent également les représentations des DOM TOM. Il est donc nécessaire de les retirer.
 En effet, dans un soucis d'uniformisation, face aux données à notre disposition, nous avons fait le choix de ne prendre en compte que la France métropolitaine.
 
-##Description du code 
+## Description du code 
 
 Avant toute utilisation du code, il est nécessaire de lire les avertissements et le point méthodologique lié à ces représentations.
 Il est aussi important de fournir le chemin dans la procédure setwd qui correspondra au chemin menant aux données à importer et aux données exportées.
