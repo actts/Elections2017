@@ -4,35 +4,35 @@
 Pour réaliser une cartographie des votes aux présidentielles de 2002 et 2017 et de la société française (===> mettre en lien), nous avons déployé un outil qu'affectionnent particulièrement les data scientist, le langage R.
 Nous allons décrire les étapes par lesquelles nous sommes passés afin que vous puissiez reproduire nos cartographies.
 
-## Librairies et packages
+### Librairies et packages
 
 
->>-sp
+>-sp
 
 Fournit des classes et méthodes pour les données présentant des informations spatiales. 
 
->>-cartography 
+>-cartography 
 
 Crée et intègre des cartes dans un espace de travail R.
 
->>-RColorBrewer
+>-RColorBrewer
 
 Fournit des palettes de couleurs pour cartes ou autres graphiques.
 
->>-maptools
+>-maptools
 
 Set d'outils permettant de manipuler et de lire des données géographiques (en particulier pour les formats ShapeFiles)
 
->>-classInt
+>-classInt
 
 Méthodes couramment utilisées afin de choisir et mettre en place des intervalles de classes pour des fins de cartographiques ou graphiques.
 
->>-rgdal
+>-rgdal
 
 Importe de nombreux formats de données raster, spatiales et aussi vectorielles.
 
 
-## Données géographiques 
+### Données géographiques 
 
 Les données géographiques utilisées dans ce cas d'usage sont des données libres répertoriées sur internet.
 Ainsi, nous avons importé les données départementales et des anciennes régions françaises que vous pouvez retrouver en suivant les liens : 
@@ -41,7 +41,7 @@ régions : https://www.arcgis.com/home/item.html?id=9ce5971171e449c19a70caa0127d
 Les données des anciennes régions présentent également les représentations des DOM TOM. Il est donc nécessaire de les retirer.
 En effet, dans un soucis d'uniformisation, face aux données à notre disposition, nous avons fait le choix de ne prendre en compte que la France métropolitaine.
 
-## Description du code 
+### Description du code 
 
 Avant toute utilisation du code, il est nécessaire de lire les avertissements et le point méthodologique lié à ces représentations.
 Il est aussi important de fournir le chemin dans la procédure setwd qui correspondra au chemin menant aux données à importer et aux données exportées.
@@ -61,27 +61,27 @@ Dans un premier temps, seront décrites les cartes choroplèthes avant de s'int�
 Nous avons cherché à caractériser une donnée quantitative grâce à des variations de couleurs.
 Un département (ou région) apparaît ainsi d'une certaine nuance selon la donnée associée.
 Pour se faire, la procédure choroLayer a été choisie. Les différents arguments utilisés sont les suivants : 
->>-spdf : "SpatialPolygonsDataFrame" ici : DEP
+>-spdf : "SpatialPolygonsDataFrame" ici : DEP
 
->>-df :  data frame dans lequel on trouve les données à cartographier ici : DEP@data
+>-df :  data frame dans lequel on trouve les données à cartographier ici : DEP@data
 
->>-spdfid : nom de l'identifiant du spdf 
+>-spdfid : nom de l'identifiant du spdf 
 
->>-dfid : nom de l'identifiant dans le data frame données (df)
+>-dfid : nom de l'identifiant dans le data frame données (df)
 
->>-var : nom de la variable à numérique à représenter sur la carte
+>-var : nom de la variable à numérique à représenter sur la carte
 
->>-border : afficher (ou non) les bordure des éléments à afficher (ici départements) et choix de la couleur
+>-border : afficher (ou non) les bordure des éléments à afficher (ici départements) et choix de la couleur
 
->>-method : choix de la méthode de discrétisation des données
+>-method : choix de la méthode de discrétisation des données
 
->>-nclass : nombre de classes choisies
+>-nclass : nombre de classes choisies
 
->>-col : choix des différentes couleurs de la carte (vecteur ou utilisation de la procédure carto.pal qui propose une palette de couleurs)
+>-col : choix des différentes couleurs de la carte (vecteur ou utilisation de la procédure carto.pal qui propose une palette de couleurs)
 
->>-legend.title.txt : titre de la légende
+>-legend.title.txt : titre de la légende
 
->>-legend.pos : position de la légende en fonction de la carte
+>-legend.pos : position de la légende en fonction de la carte
 
 Cette méthode ne permettait pas de réaliser les cartes représentant le candidat sortant pour chaque département.
 Pour cela, une autre procédure a été utilisée.  Chaque étape réalisée dans la procédure précédente a été détaillée.
