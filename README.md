@@ -42,6 +42,7 @@ Les données des anciennes régions présentent également les représentations 
 En effet, dans un soucis d'uniformisation, face aux données à notre disposition, nous avons fait le choix de ne prendre en compte que la France métropolitaine.
 
 ##Description du code 
+
 Avant toute utilisation du code, il est nécessaire de lire les avertissements et le point méthodologique lié à ces représentations.
 Il est aussi important de fournir le chemin dans la procédure setwd qui correspondra au chemin menant aux données à importer et aux données exportées.
 Les méthodes cartographiques utilisées ici sont inspirées du tutoriel disponible écrit par Thimothée Giraud. 
