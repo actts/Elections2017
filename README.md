@@ -2,8 +2,8 @@
 ## "La Société française et les Elections Présidentielles 2002 et 2017": on vous dévoile notre script R !
 
 Pour ceux qui découvriraient ce script par eux même, une explication s'impose. Nous sommes Bittle, une start-up spécialisée en outils de reporting et de dashbord.
-Plus récemment, nous avons mis en place la plateforme DataRendezVous™, véritable réseau social de la donnée sur laquelle se rencontrent de nombreux contributeurs. (Pour plus d'informations : http://www.bittle-solutions.com/?lang=fr_fr). 
-Afin de mettre en avant les données open sources, nous avons choisi de réaliser une étude portant sur les élections présidentielles de 2017 en utilisant seulement des données libres de droits. Vous trouverez le résultat de l'étude en suivant ce lien : https://www.datarendezvous.com/infographie-elections-presidentielles-2017-1er-2eme-tour/
+Plus récemment, nous avons mis en place la plateforme DataRendezVous™, véritable réseau social de la donnée sur laquelle se rencontrent de nombreux contributeurs. (Pour plus d'informations : [ici](http://www.bittle-solutions.com/?lang=fr_fr)). 
+Afin de mettre en avant les données open sources, nous avons choisi de réaliser une étude portant sur les élections présidentielles de 2017 en utilisant seulement des données libres de droits. Vous trouverez le résultat de l'étude en suivant ce [lien]. (https://www.datarendezvous.com/infographie-elections-presidentielles-2017-1er-2eme-tour/)
 
 
 Pour réaliser une cartographie des votes aux présidentielles de 2002 et 2017 et de la société française, nous avons déployé un outil qu'affectionnent particulièrement les data scientist, le langage R.
