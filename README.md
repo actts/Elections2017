@@ -40,9 +40,9 @@ Importe de nombreux formats de données raster, spatiales et aussi vectorielles.
 ### Données géographiques 
 
 Les données géographiques utilisées dans ce cas d'usage sont des données libres répertoriées sur internet.
-Ainsi, nous avons importé les données départementales et des anciennes régions françaises que vous pouvez retrouver en suivant les liens : 
-départements : http://professionnels.ign.fr/geofla
-régions : https://www.arcgis.com/home/item.html?id=9ce5971171e449c19a70caa0127d924c
+Ainsi, nous avons importé les données départementales et des anciennes régions françaises que vous pouvez retrouver en suivant les liens : [départements](http://professionnels.ign.fr/geofla)
+ ; [régions](https://www.arcgis.com/home/item.html?id=9ce5971171e449c19a70caa0127d924c)
+ 
 Les données des anciennes régions présentent également les représentations des DOM TOM. Il est donc nécessaire de les retirer.
 En effet, dans un soucis d'uniformisation, face aux données à notre disposition, nous avons fait le choix de ne prendre en compte que la France métropolitaine.
 
